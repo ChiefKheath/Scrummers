@@ -8,6 +8,9 @@ public class ProductObject : MonoBehaviour
     [SerializeField] string productName; //Name of the product
     [SerializeField] string productDesc; //Description of object
 
+    enum ProductType {Phone, SIM, Package }
+    [SerializeField] ProductType productType;
+
     [SerializeField] int productID; //ID number of product
     [SerializeField] double productPrice; //Price of the product
 
