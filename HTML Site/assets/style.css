@@ -1,0 +1,55 @@
+body {
+	margin:0;
+	text-align:center;
+}
+
+.container {
+	width:60%;
+	padding:10px;
+	text-align:center;
+	background:#9a8c98;
+	display:inline-block;
+	margin-top:20px;
+	border:1px solid #9a8c98;
+	border-radius:5px;
+}
+
+.container h1 {
+	color:#fff;
+	margin:0;
+}
+
+button {
+	padding:5px;
+	font-weight:bold;
+	margin-top:10px;
+}
+
+input[type="text"], input[type="password"] {
+	margin-top:10px;
+}
+
+.shopping-basket .item-name {
+	margin-bottom:5px;
+	display:inline-block;
+}
+
+.item img {
+	display:inline-block;
+}
+
+.header {
+	background-color:#22223b;
+	padding:25px;
+	margin:0;
+}
+
+.header h1 {
+	margin:0;
+	font-weight:bold;
+	color:#fff;
+}
+
+h1, h2, a, span, p {
+	font-family:Arial,sans-serif;
+}
