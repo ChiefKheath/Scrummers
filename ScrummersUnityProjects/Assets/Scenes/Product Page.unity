@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridLayoutGroup: {fileID: 325977130}
-  itemPrefab: {fileID: 5376339092372140315, guid: 66533b880dc7bc4469591c454b424b09, type: 3}
+  itemPrefab: {fileID: 7508671018403502341, guid: 98e2b6749660f39489c6603e281a9fe5, type: 3}
 --- !u!114 &325977130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 500, y: 500}
+  m_CellSize: {x: 470, y: 470}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
