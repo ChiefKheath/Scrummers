@@ -38,14 +38,18 @@ public class PopulateProducts : MonoBehaviour
             {"LG","Velvet","128gb"}
         };
 
-        for (int row = 0; row < phoneInfo.GetLength(0); row++) { // iterate through rows
-            string[] product = new string[3];
-            product[0] = phoneInfo[row, 0];
-            product[1] = phoneInfo[row, 1];
-            product[2] = phoneInfo[row, 2];
-            GameObject newItem = Instantiate(itemPrefab);
-            newItem.transform.SetParent(phoneGridLayoutGroup.transform);
-            newItem.GetComponentInChildren<TMP_Text>().text = string.Format(template, product);
+        if(phoneGridLayoutGroup != null)
+        {
+            for (int row = 0; row < phoneInfo.GetLength(0); row++)
+            { // iterate through rows
+                string[] product = new string[3];
+                product[0] = phoneInfo[row, 0];
+                product[1] = phoneInfo[row, 1];
+                product[2] = phoneInfo[row, 2];
+                GameObject newItem = Instantiate(itemPrefab);
+                newItem.transform.SetParent(phoneGridLayoutGroup.transform);
+                newItem.GetComponentInChildren<TMP_Text>().text = string.Format(template, product);
+            }
         }
 
         string[,] simInfo = new string[17, 3] {
@@ -68,15 +72,18 @@ public class PopulateProducts : MonoBehaviour
             {"Superdrug Mobile","SIM Only","10GB"}
         };
 
-        for (int row = 0; row < simInfo.GetLength(0); row++)
-        { // iterate through rows
-            string[] product = new string[3];
-            product[0] = simInfo[row, 0];
-            product[1] = simInfo[row, 1];
-            product[2] = simInfo[row, 2];
-            GameObject newItem = Instantiate(itemPrefab);
-            newItem.transform.SetParent(simOnlyGridLayoutGroup.transform);
-            newItem.GetComponentInChildren<TMP_Text>().text = string.Format(template, product);
+        if(simOnlyGridLayoutGroup != null)
+        {
+            for (int row = 0; row < simInfo.GetLength(0); row++)
+            { // iterate through rows
+                string[] product = new string[3];
+                product[0] = simInfo[row, 0];
+                product[1] = simInfo[row, 1];
+                product[2] = simInfo[row, 2];
+                GameObject newItem = Instantiate(itemPrefab);
+                newItem.transform.SetParent(simOnlyGridLayoutGroup.transform);
+                newItem.GetComponentInChildren<TMP_Text>().text = string.Format(template, product);
+            }
         }
     }
 }
