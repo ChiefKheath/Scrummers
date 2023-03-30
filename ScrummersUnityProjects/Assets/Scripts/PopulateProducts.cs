@@ -38,20 +38,6 @@ public class PopulateProducts : MonoBehaviour
             {"LG","Velvet","128gb"}
         };
 
-        if(phoneGridLayoutGroup != null)
-        {
-            for (int row = 0; row < phoneInfo.GetLength(0); row++)
-            { // iterate through rows
-                string[] product = new string[3];
-                product[0] = phoneInfo[row, 0];
-                product[1] = phoneInfo[row, 1];
-                product[2] = phoneInfo[row, 2];
-                GameObject newItem = Instantiate(itemPrefab);
-                newItem.transform.SetParent(phoneGridLayoutGroup.transform);
-                newItem.GetComponentInChildren<TMP_Text>().text = string.Format(template, product);
-            }
-        }
-
         string[,] simInfo = new string[17, 3] {
             {"Vodafone","SIM Only","10GB"},
             {"O2","SIM Only","20GB"},
@@ -72,18 +58,112 @@ public class PopulateProducts : MonoBehaviour
             {"Superdrug Mobile","SIM Only","10GB"}
         };
 
-        if(simOnlyGridLayoutGroup != null)
+        string[,] accessoriesInfo = new string[20, 3] {
+            {"Apple","AirPods","2nd generation"},
+            {"Samsung","Wireless Charger","with cooling fan"},
+            {"Sony","Noise Cancelling Headphones","WH-1000XM4"},
+            {"Belkin","Power Bank","10000mAh"},
+            {"Anker","Wireless Charging Stand","with USB-C"},
+            {"Logitech","Wireless Mouse","MX Master 3"},
+            {"AmazonBasics","HDMI Cable","10 feet"},
+            {"Jabra","Bluetooth Earbuds","Elite 75t"},
+            {"Fitbit","Smart Watch","Versa 3"},
+            {"Beats","Wireless Earphones","Powerbeats Pro"},
+            {"Bose","Portable Speaker","SoundLink Micro"},
+            {"Mophie","Wireless Charging Pad","for iPhone"},
+            {"Razer","Gaming Mousepad","Firefly Hard V2"},
+            {"Google","Chromecast","with Google TV"},
+            {"DJI","Pocket 2","4K camera"},
+            {"Aukey","USB-C Hub","7-in-1 adapter"},
+            {"SanDisk","MicroSD Card","128GB"},
+            {"UGREEN","Phone Stand","adjustable"},
+            {"Native Union","USB-A to Lightning Cable","Belt Cable"},
+            {"Nomad","Leather Phone Case","for iPhone 13"}
+        };
+
+        string[,] tabletsInfo = new string[20, 3] {
+            {"Apple","iPad","10.2 inch, 64GB"},
+            {"Samsung","Galaxy Tab S7","11 inch, 128GB"},
+            {"Microsoft","Surface Pro 7","12.3 inch, 128GB"},
+            {"Amazon","Fire HD 10","10.1 inch, 32GB"},
+            {"Lenovo","Tab P11 Pro","11.5 inch, 128GB"},
+            {"Huawei","MatePad Pro","12.6 inch, 256GB"},
+            {"Google","Pixel Slate","12.3 inch, 64GB"},
+            {"Asus","ZenPad S8","8 inch, 32GB"},
+            {"Sony","Xperia Z4","10.1 inch, 32GB"},
+            {"Samsung","Galaxy Tab A7","10.4 inch, 64GB"},
+            {"Apple","iPad Air","10.9 inch, 64GB"},
+            {"Amazon","Fire HD 8","8 inch, 32GB"},
+            {"Lenovo","Tab M10 Plus","10.3 inch, 128GB"},
+            {"Huawei","MatePad T10s","10.1 inch, 64GB"},
+            {"Samsung","Galaxy Tab S6 Lite","10.4 inch, 64GB"},
+            {"Microsoft","Surface Go 2","10.5 inch, 64GB"},
+            {"Google","Nexus 9","8.9 inch, 32GB"},
+            {"Asus","Transformer Pad","10.1 inch, 32GB"},
+            {"Sony","Xperia Z2","10.1 inch, 16GB"},
+            {"Apple","iPad Pro","11 inch, 128GB"}
+        };
+
+        string[,] tvAndBroadbandInfo = new string[20, 3] {
+            {"Sky","Ultimate TV","Netflix & Sky Go included"},
+            {"Virgin Media","Maxit TV","Free Amazon Prime Video & Netflix trial"},
+            {"BT TV","Entertainment","BT Sport & AMC included"},
+            {"NOW TV","Entertainment Pass","Sky channels & over 300 box sets"},
+            {"TalkTalk TV","Entertainment","Free 7-day catch up & pause/rewind live TV"},
+            {"EE TV","Max","Freeview channels & Apple TV app"},
+            {"Plusnet TV","Entertainment","Free BT Sport Lite & 20 premium channels"},
+            {"Vodafone TV","Entertainment","Netflix & Amazon Prime Video included"},
+            {"Freesat","4K TV Box","170 channels & on-demand players"},
+            {"Virgin Media","M350","362Mbps average download speed"},
+            {"BT Broadband","Fibre 2","67Mbps average download speed"},
+            {"Sky Broadband","Superfast","59Mbps average download speed"},
+            {"TalkTalk","Faster Fibre","38Mbps average download speed"},
+            {"NOW Broadband","Brilliant Broadband","11Mbps average download speed"},
+            {"Plusnet","Fibre Extra","66Mbps average download speed"},
+            {"EE Broadband","Fibre Plus","67Mbps average download speed"},
+            {"Vodafone Broadband","Pro","63Mbps average download speed"},
+            {"Hyperoptic","Hyperfast","1Gbps average download speed"},
+            {"Gigaclear","Full Fibre","900Mbps average download speed"},
+            {"Community Fibre","Ultrafast","400Mbps average download speed"}
+        };
+
+        if (phoneGridLayoutGroup != null)
         {
-            for (int row = 0; row < simInfo.GetLength(0); row++)
-            { // iterate through rows
-                string[] product = new string[3];
-                product[0] = simInfo[row, 0];
-                product[1] = simInfo[row, 1];
-                product[2] = simInfo[row, 2];
-                GameObject newItem = Instantiate(itemPrefab);
-                newItem.transform.SetParent(simOnlyGridLayoutGroup.transform);
-                newItem.GetComponentInChildren<TMP_Text>().text = string.Format(template, product);
-            }
+            Populate(phoneInfo, phoneGridLayoutGroup, template);
+        }
+
+        if (simOnlyGridLayoutGroup != null)
+        {
+            Populate(simInfo, simOnlyGridLayoutGroup, template);
+        }
+
+        if (accessoriesGridLayoutGroup != null)
+        {
+            Populate(accessoriesInfo, accessoriesGridLayoutGroup, template);
+        }
+
+        if (tabletsGridLayoutGroup != null)
+        {
+            Populate(tabletsInfo, tabletsGridLayoutGroup, template);
+        }
+
+        if (tvAndBroadbandInfo != null)
+        {
+            Populate(tvAndBroadbandInfo, tvAndBroadbandGridLayoutGroup, template);
         }
     }
+
+    private void Populate(string[,] array, GridLayoutGroup layoutGroup, string template)
+    {
+        for (int row = 0; row < array.GetLength(0); row++)
+        { // iterate through rows
+            string[] product = new string[3];
+            product[0] = array[row, 0];
+            product[1] = array[row, 1];
+            product[2] = array[row, 2];
+            GameObject newItem = Instantiate(itemPrefab);
+            newItem.transform.SetParent(layoutGroup.transform);
+            newItem.GetComponentInChildren<TMP_Text>().text = string.Format(template, product);
+        }
+    } 
 }
