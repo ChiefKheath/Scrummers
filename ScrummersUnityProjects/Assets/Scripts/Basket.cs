@@ -9,7 +9,7 @@ public class Basket : MonoBehaviour
     public GameObject basketUI;
     public bool UIisUP = false;
     [SerializeField] private GridLayoutGroup basketGridView;
-    [SerializeField] private BasketItems basketItems;
+    [SerializeField] public BasketItems basketItems;
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private GameObject emptyBasketPrefab;
 
