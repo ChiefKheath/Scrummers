@@ -12,6 +12,7 @@ public class Basket : MonoBehaviour
     [SerializeField] public BasketItems basketItems;
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private GameObject emptyBasketPrefab;
+    [SerializeField] private GameObject button;
     [SerializeField] private GameObject mobilePhonesScrollView, simOnlyScrollView, accessoriesScrollView, tabletsScrollView, tvAndBroadbandScrollView, supportScrollView, checkout, basketBox;
 
     public void BasketClick()
@@ -28,6 +29,7 @@ public class Basket : MonoBehaviour
         {
             GameObject emptyBasketItem = Instantiate(emptyBasketPrefab);
             emptyBasketItem.transform.SetParent(basketGridView.transform);
+            button.SetActive(false);
         }
         else
         {
@@ -38,6 +40,7 @@ public class Basket : MonoBehaviour
                 basketItem.transform.SetParent(basketGridView.transform);
                 basketItem.GetComponentInChildren<TMP_Text>().text = info;
             }
+            button.SetActive(true);
         }
     }
     
