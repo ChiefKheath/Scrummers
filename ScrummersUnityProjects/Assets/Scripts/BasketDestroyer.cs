@@ -24,6 +24,9 @@ public class BasketDestroyer : MonoBehaviour
             }
         }
 
+        basket.populateCheckout.total = 0;
+        basket.populateCheckout.CalculateTotal();
+
         Destroy(basketItem);
     }
 }
