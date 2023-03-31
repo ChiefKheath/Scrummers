@@ -11,6 +11,7 @@ public class Basket : MonoBehaviour
     [SerializeField] private GridLayoutGroup basketGridView;
     [SerializeField] private BasketItems basketItems;
     [SerializeField] private GameObject itemPrefab;
+    [SerializeField] private GameObject emptyBasketPrefab;
 
     public void BasketClick()
     {
@@ -22,12 +23,20 @@ public class Basket : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        foreach (GameObject item in basketItems.items)
+        if(basketItems.items.Count == 0)
         {
-            string info = item.GetComponentInChildren<TMP_Text>().text;
-            GameObject basketItem = Instantiate(itemPrefab);
-            basketItem.transform.SetParent(basketGridView.transform);
-            basketItem.GetComponentInChildren<TMP_Text>().text = info;
+            GameObject emptyBasketItem = Instantiate(emptyBasketPrefab);
+            emptyBasketItem.transform.SetParent(basketGridView.transform);
+        }
+        else
+        {
+            foreach (GameObject item in basketItems.items)
+            {
+                string info = item.GetComponentInChildren<TMP_Text>().text;
+                GameObject basketItem = Instantiate(itemPrefab);
+                basketItem.transform.SetParent(basketGridView.transform);
+                basketItem.GetComponentInChildren<TMP_Text>().text = info;
+            }
         }
     }
     
