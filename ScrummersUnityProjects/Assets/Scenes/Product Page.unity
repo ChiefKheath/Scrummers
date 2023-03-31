@@ -2967,7 +2967,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 174596483}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3287895
+  m_Size: 0.32879147
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5463,7 +5463,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 267961978}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997604
+  m_Size: 0.99997956
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6453,7 +6453,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1906980530}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3287895
+  m_Size: 0.32879147
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6580,7 +6580,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1763771675}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3287895
+  m_Size: 0.32879147
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6707,7 +6707,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1457058992}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997604
+  m_Size: 0.99997956
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6871,7 +6871,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1243298919}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997604
+  m_Size: 0.99997956
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8035,7 +8035,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 127778949}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997604
+  m_Size: 0.99997956
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8418,7 +8418,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 228754991}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997604
+  m_Size: 0.99997956
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9669,7 +9669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.76400006}
-  m_AnchoredPosition: {x: -10.060547, y: 3.1846924}
+  m_AnchoredPosition: {x: -10.060547, y: 3.1845703}
   m_SizeDelta: {x: 14.1481, y: 912.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1527199543
@@ -9725,8 +9725,6 @@ MonoBehaviour:
   CheckoutUI: {fileID: 1048976499}
   PaymentUI: {fileID: 636461193}
   ProceedButton: {fileID: 123458478}
-  CUIisUP: 0
-  PUIisUP: 1
 --- !u!1 &1538704394
 GameObject:
   m_ObjectHideFlags: 0
@@ -11072,7 +11070,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 266037539}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3287895
+  m_Size: 0.32879147
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12458,7 +12456,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 710269900}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3287895
+  m_Size: 0.32879147
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

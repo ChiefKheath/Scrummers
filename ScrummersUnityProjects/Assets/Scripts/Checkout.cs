@@ -7,21 +7,24 @@ public class Checkout : MonoBehaviour
     public GameObject CheckoutUI;
     public GameObject PaymentUI;
     public GameObject ProceedButton;
-    public bool CUIisUP = true;
-    public bool PUIisUP = false;
+    //public bool CUIisUP = true;
+    //public bool PUIisUP = false;
 
     public void PayClick()
     {
-        CUIisUP = !CUIisUP;
-        PUIisUP = !PUIisUP;
-        CheckoutUI.SetActive(CUIisUP);
-        PaymentUI.SetActive(PUIisUP);
+        //CUIisUP = !CUIisUP;
+        //PUIisUP = !PUIisUP;
+        CheckoutUI.SetActive(false);
+        PaymentUI.SetActive(true);
+    }
 
-        if (PUIisUP == true)
+    public void Update()
+    {
+        if (PaymentUI == false)
         {
             ProceedButton.SetActive(false);
         }
-        else if (CUIisUP == true)
+        else if (CheckoutUI == false)
         {
             ProceedButton.SetActive(true);
         }
