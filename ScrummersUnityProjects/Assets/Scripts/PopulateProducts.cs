@@ -147,7 +147,7 @@ public class PopulateProducts : MonoBehaviour
             Populate(tabletsInfo, tabletsGridLayoutGroup, template);
         }
 
-        if (tvAndBroadbandInfo != null)
+        if (tvAndBroadbandGridLayoutGroup != null)
         {
             Populate(tvAndBroadbandInfo, tvAndBroadbandGridLayoutGroup, template);
         }

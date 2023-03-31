@@ -3848,7 +3848,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 608658170}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2000024149}
+        m_TargetAssemblyTypeName: Basket, Assembly-CSharp
+        m_MethodName: Checkout
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &608658170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6041,6 +6053,8 @@ MonoBehaviour:
   tabletsScrollView: {fileID: 1889552432}
   tvAndBroadbandScrollView: {fileID: 462764900}
   supportScrollView: {fileID: 1388317957}
+  checkout: {fileID: 1527199541}
+  basketBox: {fileID: 875812255}
 --- !u!1 &1023710374
 GameObject:
   m_ObjectHideFlags: 0
@@ -9075,8 +9089,8 @@ RectTransform:
   - {fileID: 1889552433}
   - {fileID: 462764901}
   - {fileID: 1388317958}
-  - {fileID: 1816653395}
   - {fileID: 1527199542}
+  - {fileID: 1816653395}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9304,7 +9318,7 @@ RectTransform:
   - {fileID: 1351257147}
   - {fileID: 1080910334}
   m_Father: {fileID: 1480615553}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.76400006}
@@ -11152,7 +11166,7 @@ RectTransform:
   - {fileID: 1271771814}
   - {fileID: 875812258}
   m_Father: {fileID: 1480615553}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -12345,6 +12359,14 @@ MonoBehaviour:
   basketItems: {fileID: 1239524753}
   itemPrefab: {fileID: 7726133756714599681, guid: 6602ddec5cfdcd94e856a4994127f3dd, type: 3}
   emptyBasketPrefab: {fileID: 7726133756714599681, guid: a6b02a72ff81b2f4d846af3be04f852d, type: 3}
+  mobilePhonesScrollView: {fileID: 1654872866}
+  simOnlyScrollView: {fileID: 1079918928}
+  accessoriesScrollView: {fileID: 954867155}
+  tabletsScrollView: {fileID: 1889552432}
+  tvAndBroadbandScrollView: {fileID: 462764900}
+  supportScrollView: {fileID: 1388317957}
+  checkout: {fileID: 1527199541}
+  basketBox: {fileID: 875812255}
 --- !u!4 &2000024150
 Transform:
   m_ObjectHideFlags: 0

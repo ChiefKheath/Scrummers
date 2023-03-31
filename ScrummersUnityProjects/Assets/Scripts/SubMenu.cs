@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SubMenu : MonoBehaviour
 {
     [SerializeField] private GameObject mobilePhonesScrollView, simOnlyScrollView, 
-        accessoriesScrollView, tabletsScrollView, tvAndBroadbandScrollView, supportScrollView;
+        accessoriesScrollView, tabletsScrollView, tvAndBroadbandScrollView, supportScrollView, checkout, basketBox;
     
     public void MobilePhones()
     {
@@ -52,6 +53,8 @@ public class SubMenu : MonoBehaviour
         tabletsScrollView.SetActive(false);
         tvAndBroadbandScrollView.SetActive(false);
         supportScrollView.SetActive(false);
+        checkout.SetActive(false);
+        basketBox.SetActive(false);
     }
 
     private void Start()

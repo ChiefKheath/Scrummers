@@ -12,6 +12,7 @@ public class Basket : MonoBehaviour
     [SerializeField] public BasketItems basketItems;
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private GameObject emptyBasketPrefab;
+    [SerializeField] private GameObject mobilePhonesScrollView, simOnlyScrollView, accessoriesScrollView, tabletsScrollView, tvAndBroadbandScrollView, supportScrollView, checkout, basketBox;
 
     public void BasketClick()
     {
@@ -52,5 +53,24 @@ public class Basket : MonoBehaviour
     {
             basketUI.SetActive(false);
             UIisUP = false;
+    }
+    public void Checkout()
+    {
+        SetAllInactive();
+        checkout.SetActive(true);
+        CloseBasket();
+    }
+
+    private void SetAllInactive()
+    {
+        mobilePhonesScrollView.SetActive(false);
+        simOnlyScrollView.SetActive(false);
+        tabletsScrollView.SetActive(false);
+        accessoriesScrollView.SetActive(false);
+        tabletsScrollView.SetActive(false);
+        tvAndBroadbandScrollView.SetActive(false);
+        supportScrollView.SetActive(false);
+        checkout.SetActive(false);
+        basketBox.SetActive(false);
     }
 }
