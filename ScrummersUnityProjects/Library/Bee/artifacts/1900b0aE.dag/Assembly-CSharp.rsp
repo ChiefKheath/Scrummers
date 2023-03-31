@@ -357,6 +357,7 @@
 "Assets/Scripts/Basket.cs"
 "Assets/Scripts/BasketDestroyer.cs"
 "Assets/Scripts/BasketItems.cs"
+"Assets/Scripts/Checkout.cs"
 "Assets/Scripts/PopulateProducts.cs"
 "Assets/Scripts/ProductObject.cs"
 "Assets/Scripts/SubMenu.cs"

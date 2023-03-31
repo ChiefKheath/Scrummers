@@ -6,7 +6,7 @@ using UnityEngine;
 public class SubMenu : MonoBehaviour
 {
     [SerializeField] private GameObject mobilePhonesScrollView, simOnlyScrollView, 
-        accessoriesScrollView, tabletsScrollView, tvAndBroadbandScrollView, supportScrollView, checkout, basketBox;
+        accessoriesScrollView, tabletsScrollView, tvAndBroadbandScrollView, supportScrollView, checkout, basketBox, checkoutPayment, checkoutDetails;
     
     public void MobilePhones()
     {
@@ -55,6 +55,8 @@ public class SubMenu : MonoBehaviour
         supportScrollView.SetActive(false);
         checkout.SetActive(false);
         basketBox.SetActive(false);
+        checkoutPayment.SetActive(false);
+        checkoutDetails.SetActive(false);
     }
 
     private void Start()
