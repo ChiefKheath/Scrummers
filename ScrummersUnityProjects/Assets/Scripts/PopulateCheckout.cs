@@ -15,12 +15,22 @@ public class PopulateCheckout : MonoBehaviour
 
     public void Populate()
     {
+        ClearCheckout();
+
         foreach (GameObject item in basketItems.items)
         {
             string info = item.GetComponentInChildren<TMP_Text>().text;
             GameObject checkoutItem = Instantiate(checkoutItemPrefab);
             checkoutItem.transform.SetParent(checkoutGridLayoutGroup.transform);
             checkoutItem.GetComponentInChildren<TMP_Text>().text = info;
+        }
+    }
+
+    private void ClearCheckout()
+    {
+        foreach (Transform child in checkoutGridLayoutGroup.transform)
+        {
+            Destroy(child.gameObject);
         }
     }
 
