@@ -12,25 +12,27 @@ public class Basket : MonoBehaviour
     [SerializeField] public BasketItems basketItems;
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private GameObject emptyBasketPrefab;
-    [SerializeField] private GameObject button;
+    [SerializeField] private GameObject checkoutButton;
+    [SerializeField] public GameObject basketButton;
+    [SerializeField] public TMP_Text basketButtonTxt;
     [SerializeField] private GameObject mobilePhonesScrollView, simOnlyScrollView, accessoriesScrollView, tabletsScrollView, tvAndBroadbandScrollView, supportScrollView, checkout, basketBox, checkoutPayment, checkoutDetails;
     [SerializeField] public PopulateCheckout populateCheckout;
+    Color blue;
 
     public void BasketClick()
     {
         UIisUP = !UIisUP;
         basketUI.SetActive(UIisUP);
 
-        foreach(Transform child in basketGridView.transform)
-        {
-            Destroy(child.gameObject);
-        }
+        ClearBasket();
 
-        if(basketItems.items.Count == 0)
+        if (basketItems.items.Count == 0)
         {
             GameObject emptyBasketItem = Instantiate(emptyBasketPrefab);
             emptyBasketItem.transform.SetParent(basketGridView.transform);
-            button.SetActive(false);
+            basketButtonTxt.text = "Basket";
+            basketButton.GetComponent<Image>().color = blue;
+            checkoutButton.SetActive(false);
         }
         else
         {
@@ -41,10 +43,18 @@ public class Basket : MonoBehaviour
                 basketItem.transform.SetParent(basketGridView.transform);
                 basketItem.GetComponentInChildren<TMP_Text>().text = info;
             }
-            button.SetActive(true);
+            checkoutButton.SetActive(true);
         }
     }
-    
+
+    private void ClearBasket()
+    {
+        foreach (Transform child in basketGridView.transform)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
     public void CloseBasket()
     {
             basketUI.SetActive(false);
@@ -74,5 +84,10 @@ public class Basket : MonoBehaviour
         basketBox.SetActive(false);
         checkoutPayment.SetActive(false);
         checkoutDetails.SetActive(false);
+    }
+
+    private void Start()
+    {
+        blue = new Color32(73, 198, 229, 255);
     }
 }

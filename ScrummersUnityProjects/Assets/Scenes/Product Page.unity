@@ -2623,7 +2623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00048828125, y: -832.56116}
+  m_AnchoredPosition: {x: 0, y: -832.56055}
   m_SizeDelta: {x: 1903, y: 2480.841}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &325977129
@@ -2703,7 +2703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00048828125, y: -832.56116}
+  m_AnchoredPosition: {x: 0, y: -832.56055}
   m_SizeDelta: {x: 1903, y: 2480.841}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411056232
@@ -2966,8 +2966,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 174596484}
   m_HandleRect: {fileID: 174596483}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.3287899
+  m_Value: 1
+  m_Size: 0.3288027
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4650,7 +4650,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00048828125, y: -832.56116}
+  m_AnchoredPosition: {x: 0, y: -832.56055}
   m_SizeDelta: {x: 1903, y: 2480.841}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720125223
@@ -4993,7 +4993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00048828125, y: -832.56116}
+  m_AnchoredPosition: {x: 0, y: -832.56055}
   m_SizeDelta: {x: 1903, y: 2480.841}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767936962
@@ -5463,7 +5463,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 267961978}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997854
+  m_Size: 0.99999195
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6452,8 +6452,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1906980531}
   m_HandleRect: {fileID: 1906980530}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.3287899
+  m_Value: 1
+  m_Size: 0.3288027
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6579,8 +6579,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1763771676}
   m_HandleRect: {fileID: 1763771675}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.3287899
+  m_Value: 1
+  m_Size: 0.3288027
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6707,7 +6707,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1457058992}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997854
+  m_Size: 0.99999195
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6874,7 +6874,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1243298919}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997854
+  m_Size: 0.99999195
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7864,7 +7864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00048828125, y: -832.56116}
+  m_AnchoredPosition: {x: 0, y: -832.56055}
   m_SizeDelta: {x: 1903, y: 2480.841}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155275416
@@ -7989,8 +7989,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -851.465, y: -505}
-  m_SizeDelta: {x: -1896.3123, y: -1628.851}
+  m_AnchoredPosition: {x: -843.3309, y: -505}
+  m_SizeDelta: {x: -1891.7664, y: -1628.851}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1162115563
 MonoBehaviour:
@@ -8012,7 +8012,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Total:'
+  m_text: "Total: \xA3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8173,7 +8173,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 127778949}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997854
+  m_Size: 0.99999195
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8349,7 +8349,7 @@ GameObject:
   - component: {fileID: 1271771816}
   - component: {fileID: 1271771815}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Basket Btn Txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8556,7 +8556,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 228754991}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99997854
+  m_Size: 0.99999195
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9865,7 +9865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1527199542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11286,8 +11286,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 266037540}
   m_HandleRect: {fileID: 266037539}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.3287899
+  m_Value: 1
+  m_Size: 0.3288027
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12672,8 +12672,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 710269901}
   m_HandleRect: {fileID: 710269900}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.3287899
+  m_Value: 1
+  m_Size: 0.3288027
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12938,7 +12938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -653, y: -505.17}
+  m_AnchoredPosition: {x: -636, y: -504.83}
   m_SizeDelta: {x: -1864.3009, y: -1628.514}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997914843
@@ -13073,7 +13073,9 @@ MonoBehaviour:
   basketItems: {fileID: 1239524753}
   itemPrefab: {fileID: 7726133756714599681, guid: 6602ddec5cfdcd94e856a4994127f3dd, type: 3}
   emptyBasketPrefab: {fileID: 7726133756714599681, guid: a6b02a72ff81b2f4d846af3be04f852d, type: 3}
-  button: {fileID: 608658167}
+  checkoutButton: {fileID: 608658167}
+  basketButton: {fileID: 1816653394}
+  basketButtonTxt: {fileID: 1271771815}
   mobilePhonesScrollView: {fileID: 1654872866}
   simOnlyScrollView: {fileID: 1079918928}
   accessoriesScrollView: {fileID: 954867155}

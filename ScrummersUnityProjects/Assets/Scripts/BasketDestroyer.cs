@@ -6,11 +6,13 @@ public class BasketDestroyer : MonoBehaviour
 {
     public GameObject basketItem;
     private Basket basket;
+    private BasketItems basketItems;
     private int index;
 
     private void Start()
     {
         basket = GameObject.Find("Manager").GetComponent<Basket>();
+        basketItems = GameObject.Find("Basket").GetComponent<BasketItems>();
     }
 
     public void Destroyer()
@@ -26,6 +28,8 @@ public class BasketDestroyer : MonoBehaviour
 
         basket.populateCheckout.total = 0;
         basket.populateCheckout.CalculateTotal();
+
+        basket.basketButtonTxt.text = "Basket (" + basketItems.items.Count.ToString() + ")";
 
         Destroy(basketItem);
     }
