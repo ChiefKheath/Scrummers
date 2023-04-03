@@ -9,6 +9,7 @@ public class CardChecker : MonoBehaviour
     public TMP_InputField CardNumberField;
     public Button finalise;
     public TMP_InputField CVCField;
+    public GameObject finalisedpayment;
 
     public void CardNumberCheck()
     {
@@ -37,7 +38,7 @@ public class CardChecker : MonoBehaviour
     {
         if (CardNumberField.text.Length == 16 && CVCField.text.Length == 3)
         {
-
+            finalisedpayment.SetActive(true);
         }
     }
 }
