@@ -360,6 +360,7 @@
 "Assets/Scripts/BasketItems.cs"
 "Assets/Scripts/CardChecker.cs"
 "Assets/Scripts/Checkout.cs"
+"Assets/Scripts/DetailsButton.cs"
 "Assets/Scripts/FinalisedPayment.cs"
 "Assets/Scripts/PopulateCheckout.cs"
 "Assets/Scripts/PopulateProducts.cs"
