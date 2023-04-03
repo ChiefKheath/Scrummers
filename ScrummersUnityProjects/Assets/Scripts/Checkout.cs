@@ -7,6 +7,8 @@ public class Checkout : MonoBehaviour
     public GameObject CheckoutUI;
     public GameObject PaymentUI;
     public GameObject ProceedButton;
+    public GameObject Filter;
+    public GameObject UnavailableBox;
     //public bool CUIisUP = true;
     //public bool PUIisUP = false;
 
@@ -27,6 +29,24 @@ public class Checkout : MonoBehaviour
         else if (CheckoutUI == false)
         {
             ProceedButton.SetActive(true);
+        }
+
+
+
+        if (PaymentUI == true)
+        {
+            Filter.SetActive(false);
+            UnavailableBox.SetActive(false);
+        }
+        else if (CheckoutUI == true)
+        {
+            Filter.SetActive(false);
+            UnavailableBox.SetActive(false);
+        }
+        else
+        {
+            Filter.SetActive(true);
+            UnavailableBox.SetActive(true);
         }
     }
 

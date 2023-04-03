@@ -84,6 +84,7 @@ public class Basket : MonoBehaviour
         basketBox.SetActive(false);
         checkoutPayment.SetActive(false);
         checkoutDetails.SetActive(false);
+
     }
 
     private void Start()

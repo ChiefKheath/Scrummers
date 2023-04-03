@@ -12,6 +12,8 @@ public class PopulateCheckout : MonoBehaviour
     private int infoSeperationIndex;
     public float total;
     [SerializeField] private GameObject priceGameObject;
+    [SerializeField] public GameObject discountAmount;
+    [SerializeField] public GameObject finalAmount;
 
     public void Populate()
     {
@@ -57,5 +59,8 @@ public class PopulateCheckout : MonoBehaviour
         }
 
         priceGameObject.GetComponent<TMP_Text>().text = total.ToString();
+        discountAmount.GetComponent<TMP_Text>().text = (total * 0.15).ToString();
+        finalAmount.GetComponent<TMP_Text>().text = (total * 0.85).ToString();
     }
+
 }

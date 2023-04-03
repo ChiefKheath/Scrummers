@@ -11,4 +11,9 @@ public class levelmanager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void LogOut()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
