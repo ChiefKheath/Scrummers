@@ -47,4 +47,9 @@ public class LoginPage : MonoBehaviour
     {
         SceneManager.LoadScene("Staff Portal");
     }
+
+    public void LoginScene()
+    {
+        SceneManager.LoadScene("Login");
+    }
 }

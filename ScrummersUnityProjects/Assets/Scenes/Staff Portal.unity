@@ -501,7 +501,7 @@ SpriteRenderer:
   m_Size: {x: 6, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &121090167
@@ -780,8 +780,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 501.12802, y: -61.823}
-  m_SizeDelta: {x: 997.9186, y: 123.64}
+  m_AnchoredPosition: {x: 520.9527, y: -61.823}
+  m_SizeDelta: {x: 958.2692, y: 123.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &207708372
 MonoBehaviour:
@@ -837,7 +837,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1982,6 +1982,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518236494}
   m_CullTransparentMesh: 1
+--- !u!1 &533464688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533464690}
+  - component: {fileID: 533464689}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &533464689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533464688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967028799af0b4e4e99caa90a839a45f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emailField: {fileID: 0}
+  passwordField: {fileID: 0}
+  validateText: {fileID: 0}
+--- !u!4 &533464690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533464688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &688378030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3211,6 +3258,10 @@ MonoBehaviour:
   tabletsScrollView: {fileID: 174172455}
   tvAndBroadbandScrollView: {fileID: 1325042895}
   supportScrollView: {fileID: 937303867}
+  checkout: {fileID: 0}
+  basketBox: {fileID: 0}
+  checkoutPayment: {fileID: 0}
+  checkoutDetails: {fileID: 0}
 --- !u!1 &1034472484
 GameObject:
   m_ObjectHideFlags: 0
@@ -5239,7 +5290,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1426054496}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 533464689}
+        m_TargetAssemblyTypeName: LoginPage, Assembly-CSharp
+        m_MethodName: LoginScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1426054496
 MonoBehaviour:
   m_ObjectHideFlags: 0
