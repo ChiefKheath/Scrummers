@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Product Page.unity
     guid: 6d40f048018bc7b4c8b9adaa7a60daa7
+  - enabled: 1
+    path: Assets/Scenes/Staff Portal.unity
+    guid: 229c82342032fc44dafebead06e07816
   m_configObjects: {}

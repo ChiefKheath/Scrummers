@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SubMenu : MonoBehaviour
 {
@@ -53,10 +54,14 @@ public class SubMenu : MonoBehaviour
         tabletsScrollView.SetActive(false);
         tvAndBroadbandScrollView.SetActive(false);
         supportScrollView.SetActive(false);
-        checkout.SetActive(false);
-        basketBox.SetActive(false);
-        checkoutPayment.SetActive(false);
-        checkoutDetails.SetActive(false);
+        if(SceneManager.GetActiveScene().name != "Staff Portal")
+        {
+            checkout.SetActive(false);
+            basketBox.SetActive(false);
+            checkoutPayment.SetActive(false);
+            checkoutDetails.SetActive(false);
+        }
+        
     }
 
     private void Start()
