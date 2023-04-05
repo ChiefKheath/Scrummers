@@ -8,13 +8,19 @@ public class LoginPage : MonoBehaviour
 {
     [SerializeField] private TMP_InputField emailField;
     [SerializeField] private TMP_InputField passwordField;
+    [SerializeField] private TMP_InputField registerEmail;
+    [SerializeField] private TMP_InputField registerPassword;
+    [SerializeField] private TMP_InputField registerConfPassword;
+    [SerializeField] private TMP_InputField registerPhoneNo;
     [SerializeField] private GameObject validateText;
+    [SerializeField] private GameObject registerValidateText;
 
     private void Start()
     {
         if(SceneManager.GetActiveScene().name == "Login")
         {
             validateText.SetActive(false);
+            registerValidateText.SetActive(false);
         }
     }
 
@@ -51,5 +57,18 @@ public class LoginPage : MonoBehaviour
     public void LoginScene()
     {
         SceneManager.LoadScene("Login");
+    }
+
+    public void Register()
+    {
+        if(registerEmail.text != "" && registerPassword.text != "" && registerConfPassword.text != "" && registerPhoneNo.text != "")
+        {
+            PlayerPrefs.SetInt("LoggedIn", 1);
+            SceneManager.LoadScene("Product Page");
+        }
+        else
+        {
+            registerValidateText.SetActive(true);
+        }
     }
 }
